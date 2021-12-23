@@ -70,18 +70,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
-                        child: FloatingActionButton(
-                          onPressed: _incrementCounter,
-                          tooltip: 'Increment',
-                          child: const Icon(Icons.add),
-                        ),
+                      IconButton(
+                        color: Colors.blueAccent,
+                        iconSize: 95,
+                        onPressed: _incrementCounter,
+                        // tooltip: 'Increment',
+                        icon: const Icon(Icons.add_circle),
                       ),
-                      SizedBox(height: 20),
-                      FloatingActionButton(
-                        onPressed: _decrementCounter,
-                        tooltip: 'Remove',
-                        child: const Icon(Icons.remove),
+
+                      IconButton(
+                          color: Colors.blueAccent,
+                        iconSize: 95,
+                        icon: const Icon(Icons.remove_circle_outline_outlined),
+                        // tooltip: 'Increase volume by 10',
+                        onPressed: _decrementCounter
                       ),
                     ],
                   ),
